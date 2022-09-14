@@ -1,5 +1,5 @@
 main{
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,7 +71,7 @@ footer{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 10vh;
   background-color: #0b062a;
 }
 footer span{
@@ -83,4 +83,14 @@ footer span{
 footer span a{
   color: #ffffff;
   text-decoration: none;
+}
+
+@media (max-width: 425px){
+  .cardsContainer{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  header{
+    font-size: 1em;
+    justify-content: space-between;
+  }
 }
